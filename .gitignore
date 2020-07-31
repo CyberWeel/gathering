@@ -1,6 +1,8 @@
 /fonts/*
+/media/*
 
 /log.txt
+/prepros.config
 /trash.txt
 
 main.css

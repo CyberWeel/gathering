@@ -7,4 +7,6 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <div class="content">
+    <div class="all">
+        <div class="container">
+            <div class="all__content">

@@ -1,0 +1,29 @@
+.footer {
+    flex-shrink: 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: rem(20px);
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > *:first-child {
+            margin-bottom: rem(5px);
+        }
+
+        & a {
+            text-decoration: underline;
+            transition: color $duration;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}

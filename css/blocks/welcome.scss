@@ -1,0 +1,49 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: rem(80px);
+
+    &__heading {
+        font: 4rem 'PermanentMarker', $fontFamily;
+        margin-bottom: rem(40px);
+        letter-spacing: rem(2px);
+    }
+
+    &__description {
+        margin-bottom: rem(40px);
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    &__button {
+        width: 30%;
+        padding: rem(10px);
+        border: rem(1px) solid $white;
+        border-radius: rem(4px);
+        font-size: 1.25rem;
+        font-weight: bold;
+        letter-spacing: rem(2px);
+        text-align: center;
+        text-shadow: $black 1px 1px 0, $black -1px -1px 0,
+                        $black -1px 1px 0, $black 1px -1px 0;
+        transition: background $duration;
+
+        &--register {
+            margin-bottom: rem(20px);
+            background-color: $blue;
+
+            &:hover {
+                background-color: $blueDark;
+            }
+        }
+
+        &--login {
+            background-color: $green;
+
+            &:hover {
+                background-color: $greenDark;
+            }
+        }
+    }
+}

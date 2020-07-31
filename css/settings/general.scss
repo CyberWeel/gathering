@@ -1,5 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font: $fontSize $fontFamily;
+    color: $white;
 }
 
 html, body {
@@ -9,20 +14,29 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background: url('/media/background.jpg') center no-repeat;
+    background-size: cover;
+    line-height: 1.6;
+    overflow: hidden;
 }
 
-// Весь контент страницы (кроме футера) должен быть обёрнут в этот блок
-.content {
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+.all {
     flex: 1 0 auto;
-}
 
-// Футер страницы
-.footer {
-    flex-shrink: 0;
+    &__content {
+        height: 100%;
+        padding: rem(20px);
+    }
 }
 
 .container {
     max-width: 1000px;
     width: 90%;
+    height: 100%;
     margin: 0 auto;
 }

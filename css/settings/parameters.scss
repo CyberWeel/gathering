@@ -3,6 +3,14 @@ $fontSize: 16px;
 $fontFamily: 'Roboto', Arial, sans-serif;
 $duration: .2s;
 
+$black: #000;
+$blue: #477ec8;
+$blueDark: #3864a0;
+$green: #47c87e;
+$greenDark: #38a064;
+$red: #d73524;
+$white: #fff;
+
 // Глобальные функции
 @function rem($font: $fontSize) {
     @return ($font / $fontSize) + rem;
