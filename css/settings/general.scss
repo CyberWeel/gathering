@@ -1,0 +1,28 @@
+html {
+    font: $fontSize $fontFamily;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+// Весь контент страницы (кроме футера) должен быть обёрнут в этот блок
+.content {
+    flex: 1 0 auto;
+}
+
+// Футер страницы
+.footer {
+    flex-shrink: 0;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
