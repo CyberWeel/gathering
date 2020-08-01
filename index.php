@@ -5,8 +5,12 @@
 <section class="welcome">
     <h1 class="welcome__heading">Gathering</h1>
     <p class="welcome__description">Простой чат для всех желающих</p>
-    <a href="<?=PAGES.'/register.php'?>" class="welcome__button welcome__button--register">Регистрация</a>
-    <a href="<?=PAGES.'/login.php'?>" class="welcome__button welcome__button--login">Войти</a>
+    <?php if (!empty($_SESSION['isLoggedIn'])) { ?>
+        <a href="<?=PAGES.'/chat.php'?>" class="welcome__button welcome__button--login">Перейти к чату</a>
+    <?php } else { ?>
+        <a href="<?=PAGES.'/register.php'?>" class="welcome__button welcome__button--register">Регистрация</a>
+        <a href="<?=PAGES.'/login.php'?>" class="welcome__button welcome__button--login">Войти</a>
+    <?php } ?>
 </section>
 
 <?php require_once TEMPLATES.'/footer.php' ?>

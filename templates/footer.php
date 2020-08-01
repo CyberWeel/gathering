@@ -26,6 +26,7 @@
         <div class="close"></div>
     </div>
     <?php endif ?>
+    <?php require_once CORE.'/theme-styles.php' ?>
     <script src="/js/main-dist.js"></script>
 </body>
 </html>

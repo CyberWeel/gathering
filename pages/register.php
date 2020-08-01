@@ -107,6 +107,7 @@ if (!empty($_POST)) {
                 }
 
                 $_SESSION['isLoggedIn'] = 'yes';
+                $_SESSION['nickname'] = $user_nickname;
                 header('Location: '.PAGES.'/chat.php');
                 exit;
             } else {
