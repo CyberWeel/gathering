@@ -23,3 +23,10 @@ function analyze(
         echo '</pre>';
     }
 }
+
+function sanitizeField(
+    string $field
+) :string
+{
+    return htmlspecialchars(trim($field));
+}

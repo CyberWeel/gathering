@@ -19,11 +19,13 @@
             </div>
         </div>
     </footer>
+    <?php if (!isset($_COOKIE['agreedWithCookie'])): ?>
     <div class="cookie">
         На нашем сайте используются cookie. Продолжая пользоваться сайтом, вы
         соглашаетесь на их использование.
-    <div class="close"></div>
-</div>
+        <div class="close"></div>
+    </div>
+    <?php endif ?>
     <script src="/js/main-dist.js"></script>
 </body>
 </html>

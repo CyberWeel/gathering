@@ -2,10 +2,13 @@
 @import './settings/fonts.scss';
 @import './settings/parameters.scss';
 @import './settings/general.scss';
+@import './settings/utilities.scss';
 
 @import './blocks/close.scss';
 @import './blocks/cookie.scss';
+@import './blocks/error.scss';
 @import './blocks/footer.scss';
+@import './blocks/register.scss';
 @import './blocks/welcome.scss';
 
 @import './settings/media.scss';

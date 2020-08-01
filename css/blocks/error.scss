@@ -1,0 +1,23 @@
+.error {
+    margin-bottom: rem(20px);
+    padding: rem(20px);
+    border: rem(4px) solid $red;
+    border-radius: rem(8px);
+
+    &__heading {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    &__list {
+        list-style-position: inside;
+    }
+
+    &__item {
+        font-style: italic;
+    }
+
+    &__paragraph {
+        font-weight: bold;
+    }
+}
