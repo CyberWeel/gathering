@@ -1,11 +1,76 @@
-.chat {}
+.chat {
+    flex: 1 1 70%;
+    display: flex;
+    flex-direction: column;
 
-/*
-<main class="chat">
-    <section class="chat__window"></section>
-    <form action="<?=$_SERVER['PHP_SELF']?>" method="POST" class="chat__form">
-        <textarea name="user_message" class="user_message"></textarea>
-        <input type="submit" value="" class="user_send">
-    </form>
-</main>
-*/
+    &__window {
+        flex: 1 1 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: rem(20px) rem(20px) rem(30px);
+        overflow: auto;
+    }
+
+    &__form {
+        flex: 0 0 10%;
+        display: flex;
+    }
+
+    &__message {
+        max-width: 60%;
+        margin-top: rem(30px);
+        padding: rem(10px);
+        background: $white;
+        color: $black;
+        text-align: right;
+        position: relative;
+
+        &-text {
+            font-size: 1.1rem;
+            text-align: left;
+        }
+
+        &-time {
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+
+        &-photo {
+            display: block;
+            width: rem(30px);
+            height: rem(30px);
+            border-radius: 50%;
+            position: absolute;
+            left: rem(-40px);
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            border: rem(5px) solid $white;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            position: absolute;
+            right: 0;
+            bottom: rem(-10px);
+        }
+    }
+}
+
+.user_message {
+    flex: 1 1 80%;
+    font: inherit;
+    padding: rem(10px);
+    outline: none;
+    resize: none;
+}
+
+.user_send {
+    flex: 0 0 20%;
+    font: inherit;
+    cursor: pointer;
+}

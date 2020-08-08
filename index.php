@@ -1,5 +1,13 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'].'/core/init.php' ?>
-<?php $pageTitle = 'Gathering - Главная' ?>
+<?php
+$pageTitle = 'Gathering - Главная';
+
+if (isset($_GET['quit']) && $_GET['quit'] === 'yes') {
+    session_destroy();
+    header('Location: /');
+    exit;
+}
+?>
 <?php require_once TEMPLATES.'/header.php' ?>
 
 <section class="welcome">

@@ -24,6 +24,13 @@ function analyze(
     }
 }
 
+/**
+ * Функция очищает строку от вредоносных и пустых символов
+ *
+ * @param string $field строка для очистки
+ * @return string очищенная строка
+ * @author Nikita Murashov
+ */
 function sanitizeField(
     string $field
 ) :string

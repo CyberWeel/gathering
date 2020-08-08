@@ -26,15 +26,22 @@ a {
 }
 
 .all {
+    display: flex;
+    flex-direction: column;
     flex: 1 0 auto;
 
     &__content {
-        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
         padding: rem(20px);
     }
 }
 
 .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     max-width: 1000px;
     width: 90%;
     height: 100%;

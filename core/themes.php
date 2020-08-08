@@ -1,12 +1,18 @@
 <?php
 $themes = [
     'blue' => [
-        'color' => 'blue'
+        'color' => 'blue',
+        'name' => 'Синий',
+        'use' => '#3864a0'
     ],
-    'yellow' => [
-        'color' => 'yellow'
+    'red' => [
+        'color' => 'red',
+        'name' => 'Красный',
+        'use' => '#ac2a1c'
     ],
     'black' => [
-        'color' => 'black'
+        'color' => 'black',
+        'name' => 'Чёрный',
+        'use' => '#000'
     ]
 ];
