@@ -1,0 +1,77 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: rem(80px);
+
+    &__heading {
+        font: 4rem 'PermanentMarker', $fontFamily;
+        margin-bottom: rem(40px);
+        letter-spacing: rem(2px);
+    }
+
+    &__description {
+        margin-bottom: rem(40px);
+        font-size: 1.5rem;
+        font-style: italic;
+        text-align: center;
+    }
+
+    &__form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > label {
+            margin-bottom: rem(10px);
+        }
+
+        & > input {
+            width: 30%;
+            padding: rem(10px);
+            margin-bottom: rem(20px);
+            border-radius: rem(4px);
+            outline: none;
+        }
+
+        & > input[type='text'], & > input[type='password'] {
+            font: inherit;
+        }
+
+        & > input[type='submit'] {
+            color: inherit;
+            cursor: pointer;
+            margin-bottom: rem(80px);
+        }
+    }
+
+    &__button {
+        width: 30%;
+        margin-bottom: rem(40px);
+        padding: rem(10px);
+        border: rem(1px) solid $white;
+        border-radius: rem(4px);
+        font-size: 1.25rem;
+        font-weight: bold;
+        letter-spacing: rem(2px);
+        text-align: center;
+        text-shadow: $black 1px 1px 0, $black -1px -1px 0,
+                        $black -1px 1px 0, $black 1px -1px 0;
+        transition: background $duration;
+        background-color: $green;
+        position: relative;
+
+        &:hover {
+            background-color: $greenDark;
+        }
+
+        &--back {
+            background-color: $red;
+
+            &:hover {
+                background-color: $redDark;
+            }
+        }
+    }
+}
